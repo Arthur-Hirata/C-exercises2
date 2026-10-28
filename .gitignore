@@ -1,0 +1,13 @@
+# Ignorar arquivos compilados do C++
+*.exe
+*.out
+*.obj
+*.o
+*.dll
+*.lib
+*.a
+
+# Opcional: ignorar builds locais
+build/
+Debug/
+Release/
