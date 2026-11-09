@@ -1,2 +1,43 @@
 #include <iostream>
 #include <stdio.h>
+//– Suponha um conjunto de 5 cidades. Suponha as cidades com os seguintes nomes: A, B, C, D e E. As distâncias entre cada uma das cidades podem ser definidas por uma tabela do tipo:
+
+using namespace std;
+//essas funções convertem o nome da cidade para o índice dela e vice-versa;
+int charParaIndice(char c) {
+    return c - 'a';
+}
+char indiceParaChar(int i) {
+    return 'a' + i;
+}
+int main(){
+    int cidades[5][5] = {0};
+    cout << "Digite a distância entre as cidades: ";
+    for (int i = 0; i < 5; i++){
+        for (int j = i+1; j < 5 ; j++){
+            char cidadeOrigem = indiceParaChar(i);
+            char cidadeDestino = indiceParaChar(j);
+
+
+            cout << "Qual é a distância entre a cidade " << cidadeOrigem << " e a cidade " << cidadeDestino <<endl;
+            cin >> cidades[i][j];
+            cidades[j][i]=cidades[i][j];
+        }
+    }
+    cout << "Tabela das cidades: " <<endl;
+    cout << "\t";
+    for (int j = 0; j < 5; j++){
+        cout << indiceParaChar(j) << "\t";
+    }
+    cout <<endl;
+
+    for (int i = 0; i < 5 ; i++){
+        cout << indiceParaChar(i) << "\t";
+        for (int j = 0; j < 5 ; j++){
+            cout << cidades[i][j] << "\t";
+        }
+        cout <<endl;
+    }
+    
+
+}
