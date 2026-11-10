@@ -16,7 +16,7 @@ int main(){
     for (int i = 0; i < 5; i++){
         for (int j = i+1; j < 5 ; j++){
             char cidadeOrigem = indiceParaChar(i);
-            char cidadeDestino = indiceParaChar(j);
+            char cidadeDestino = indiceParaChar(j); 
 
 
             cout << "Qual é a distância entre a cidade " << cidadeOrigem << " e a cidade " << cidadeDestino <<endl;
@@ -38,6 +38,18 @@ int main(){
         }
         cout <<endl;
     }
+    cout << "Digite as cidades com que quer saber a distância separados por espaço: ";
+    int cidadesBuscadas[2];
+    char cidade;
+    for (int i = 0; i < 2; i++){
+        cin >> cidade;
+        int indiceCidade = charParaIndice(cidade);
+        cidadesBuscadas[i] = indiceCidade;
+    }
+    int cidade1 = cidadesBuscadas[0];
+    int cidade2 = cidadesBuscadas[1];
     
+    cout << "A distância entre as cidades " << indiceParaChar(cidade1) << " e a cidade " << indiceParaChar(cidade2) << " é de " << cidades[cidade1][cidade2];
+
 
 }
