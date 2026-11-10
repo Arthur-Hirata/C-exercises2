@@ -38,7 +38,7 @@ int main(){
         }
         cout <<endl;
     }
-    cout << "Digite as cidades com que quer saber a distância separados por espaço: ";
+    cout << "\n Digite as cidades com que quer saber a distância separados por espaço: ";
     int cidadesBuscadas[2];
     char cidade;
     for (int i = 0; i < 2; i++){
@@ -49,7 +49,23 @@ int main(){
     int cidade1 = cidadesBuscadas[0];
     int cidade2 = cidadesBuscadas[1];
     
-    cout << "A distância entre as cidades " << indiceParaChar(cidade1) << " e a cidade " << indiceParaChar(cidade2) << " é de " << cidades[cidade1][cidade2];
+    cout << "\n A distância entre as cidades " << indiceParaChar(cidade1) << " e a cidade " << indiceParaChar(cidade2) << " é de " << cidades[cidade1][cidade2];
+
+    int menorValor = 1000000;
+
+    
+    for (int i = 0; i <5; i++){
+        for (int j = 0; j  < 5; j++){
+            if (cidades[i][j] < menorValor){
+                menorValor = cidades[i][j];
+                cidade1 = i;
+                cidade2= j;
+            }
+        }        
+    }
+
+    cout << "\n As cidades mais próximas são: " << indiceParaChar(cidade1) << " e " << indiceParaChar(cidade2) << " e é de: " << menorValor <<"Km";
+
 
 
 }
