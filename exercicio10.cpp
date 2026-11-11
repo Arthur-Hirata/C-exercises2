@@ -55,7 +55,7 @@ int main(){
 
     
     for (int i = 0; i <5; i++){
-        for (int j = 0; j  < 5; j++){
+        for (int j = i+1; j  < 5; j++){
             if (cidades[i][j] < menorValor){
                 menorValor = cidades[i][j];
                 cidade1 = i;
@@ -65,6 +65,33 @@ int main(){
     }
 
     cout << "\n As cidades mais próximas são: " << indiceParaChar(cidade1) << " e " << indiceParaChar(cidade2) << " e é de: " << menorValor <<"Km";
+
+
+    string percusso;
+    cout << "\n Digite o percusso a ser pecorrido em letras minúsculas e juntas (Ex:abcadc): ";
+    cin >> percusso;
+    int distancia =0;
+
+
+    for (int i = 0; i < percusso.length() - 1; i++){
+        int origem = charParaIndice(percusso[i]);
+        int destino = charParaIndice(percusso[i+1]);
+
+        distancia += cidades[origem][destino];
+    }
+
+    cout << "\n O percusso total percorrido foi de: " << distancia <<"Km";
+
+    cout << "\n Relatório das cidades." <<endl;
+    cout << "\nCIDADE\tCIDADE\tDISTÂNCIA" << endl;
+    for (int i = 0; i < 5 ; i++){
+        for (int j = i+1; j < 5 ; j++){
+            cout << indiceParaChar(i) << "\t" << indiceParaChar(j) << "\t" << cidades[i][j] <<endl;
+        }
+    }
+
+
+
 
 
 
