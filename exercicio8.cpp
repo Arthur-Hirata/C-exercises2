@@ -32,11 +32,22 @@ int main(){
         cin >> CustoVenda[j][1];
     }
 
+    cout << "\nMês\t\tCusto\tReceita bruta\tReceita liquida" << endl;
+    
+    for (int i = 0; i < 12; i++){
+        float custoMes =0;
+        float receitaBruta = 0;
+        for (int j = 0; j < N; j++){
+            custoMes += CustoVenda[i][j] * MotoresMeses[j][0];
+            receitaBruta += CustoVenda[i][j] * MotoresMeses[j][1];
+        }
+        float receitaLiquida = custoMes -receitaBruta;
+                cout << meses[i] << "\t\t" 
+             << custoMes << "\t" 
+             << receitaBruta << "\t\t" 
+             << receitaLiquida << endl;
+    }
 
-
-
-
-
-
+    return 0;
     
 }
