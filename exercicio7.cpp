@@ -64,6 +64,15 @@ int main(){
     }
     cout << "\n A empresa de maior produção anual foi: " << empresas[empresamaiorProd] << ", e o mês em que ela menos produziu foi: " << mesMenorProd <<endl ;
 
+    cout << "\n Relatório das empresas." <<endl;
+    cout << "\nNOME DA EMPRESA\t\t TOTAL ANUAL" << endl;
+    for (int i = 0; i < N; i++){
+        int totalAnual = 0;
 
+        for (int j = 0; j < 12 ; j++){
+            totalAnual += producao[i][j];
+        }
+        cout << empresas[i] << "\t\t\t" << totalAnual <<endl;
 
+    }
 }
