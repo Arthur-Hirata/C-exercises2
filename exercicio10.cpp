@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stdio.h>
 //– Suponha um conjunto de 5 cidades. Suponha as cidades com os seguintes nomes: A, B, C, D e E. As distâncias entre cada uma das cidades podem ser definidas por uma tabela do tipo:
 
 using namespace std;

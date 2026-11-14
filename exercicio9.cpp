@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stdio.h>
 //Este programa confere se uma matriz é um quadrado perfeito
 
 using namespace std;

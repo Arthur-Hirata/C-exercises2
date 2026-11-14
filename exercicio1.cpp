@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 //Este programa imprime a posição do primeiro elemento negativo dado um arranjo de elementos
 using namespace std;
 int main (){

@@ -1,6 +1,4 @@
 #include <iostream>
-#include <stdio.h>
-#include <cmath>
 using namespace std;
 //Este programa recebe um valor em decimal e retorna seus valores em binário e hexadecimal
 

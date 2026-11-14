@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stdio.h>
 using namespace std;
 //Este programa calcula x elevado a y
 

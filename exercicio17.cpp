@@ -1,6 +1,4 @@
 #include <iostream>
-#include <stdio.h>
-#include <cmath>
 using namespace std;
 // Este programa determina se a palavra é um palindromo
 

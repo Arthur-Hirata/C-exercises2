@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stdio.h>
 //Este programa recebe dois conjuntos de números e imprime os dois e também a intersecção entre eles
 using namespace std;
 int comparacao(int x[], int tamX, int y[], int tamY, int resultado[]){

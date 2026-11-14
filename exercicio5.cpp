@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stdio.h>
 using namespace std;
 //Este programa deixa uma lista de valores em ordem, adicionando uma a mais
 

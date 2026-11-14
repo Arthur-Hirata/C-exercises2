@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stdio.h>
 using namespace std;
 
 // Este programa imprime a quantidade de vezes que cada número aparece em um arranjo

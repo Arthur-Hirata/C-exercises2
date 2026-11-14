@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stdio.h>
 //Este programa junta dois arranjos em um só com seus elementos intercalados
 
 using namespace std;

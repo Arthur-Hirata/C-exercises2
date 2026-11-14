@@ -1,5 +1,4 @@
 #include <iostream>
-
 #include <string>
 //Este programa calcula isso: Para cada empresa que produz televisores tem-se o seu nome e as quantidades de TVs produzidas em cada mês do ano.
 //imprima o nome da empresa que mais produziu no mês de agosto;
