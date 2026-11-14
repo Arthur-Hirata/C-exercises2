@@ -39,4 +39,31 @@ int main(){
     }
     cout << "\n A empresa de maior produção no mês de agosto foi: " << empresas[empresaMaiorProdAgosto];
 
+
+
+    int empresamaiorProd = 0;
+    int maiorProd = 0;
+    for (int i = 0; i < N; i++){
+        int prodAnual=  0;
+        for (int j = 0; j < 12; j++){
+            prodAnual += producao[i][j];
+        }
+        if (prodAnual > maiorProd){
+            maiorProd = prodAnual;
+            empresamaiorProd = i;
+        }
+    }
+
+    int menorProdMes = producao[empresamaiorProd][0];
+    string mesMenorProd = meses[0];
+    for (int j = 0; j < 12; j++){
+        if (producao[empresamaiorProd][j] < menorProdMes){
+            menorProdMes = producao[empresamaiorProd][j];
+            mesMenorProd = meses[j];
+        }
+    }
+    cout << "\n A empresa de maior produção anual foi: " << empresas[empresamaiorProd] << ", e o mês em que ela menos produziu foi: " << mesMenorProd <<endl ;
+
+
+
 }
